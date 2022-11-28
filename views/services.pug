@@ -1,0 +1,56 @@
+html 
+head 
+title Services 
+link(rel="stylesheet", href="./css/services.css")
+body 
+include boot.html 
+include header.pug
+// ======= Services Section =======
+section#services.services.section-bg
+  .container(data-aos='fade-up')
+    .section-title
+      h2(style="text-align:center;padding:20px") Services
+      p
+        | Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.
+    .row
+      .col-xl-3.col-md-6.d-flex.align-items-stretch(data-aos='zoom-in' data-aos-delay='100')
+        .icon-box
+          .icon
+            i.bx.bxl-dribbble
+          h4
+            a(href='') Lorem Ipsum
+          p Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi
+      .col-xl-3.col-md-6.d-flex.align-items-stretch.mt-4.mt-md-0(data-aos='zoom-in' data-aos-delay='200')
+        .icon-box
+          .icon
+            i.bx.bx-file
+          h4
+            a(href='') Sed ut perspici
+          p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+      .col-xl-3.col-md-6.d-flex.align-items-stretch.mt-4.mt-xl-0(data-aos='zoom-in' data-aos-delay='300')
+        .icon-box
+          .icon
+            i.bx.bx-tachometer
+          h4
+            a(href='') Magni Dolores
+          p Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+      .col-xl-3.col-md-6.d-flex.align-items-stretch.mt-4.mt-xl-0(data-aos='zoom-in' data-aos-delay='400')
+        .icon-box
+          .icon
+            i.bx.bx-layer
+          h4
+            a(href='') Nemo Enim
+          p At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+// End Services Section
+// ======= Cta Section =======
+section#cta.cta
+  .container(data-aos='zoom-in')
+    .row
+      .col-lg-9.text-center.text-lg-start
+        h3 Call To Action
+        p
+          | Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      .col-lg-3.cta-btn-container.text-center
+        a.cta-btn.align-middle(href='#') Call To Action
+// End Cta Section
+include footer.pug

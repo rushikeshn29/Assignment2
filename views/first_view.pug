@@ -1,0 +1,146 @@
+html 
+head 
+title Pug templete assinment 
+link(rel="stylesheet", href="./css/style.css")
+body 
+include boot.html 
+include header.pug 
+main.bgimage
+    .headerset.text-white
+    h2(style="font-weight: lighter;padding-bottom: 10px;color:black;margin-left:50px")
+      | Driving Digital Growth,
+      br
+      | Led By Technology
+    h4(style='font-weight: lighter;color:black;margin-left:50px')
+      | Fueling Business with  sustained digital capabilities, ressilent products, and next-gen
+      br
+      | solutions.
+    button.btn.btn-danger.active.mt-4(style='background-color: red;margin-left:50px' type='button') Let&apos;s Talk &nbsp; &rarr;
+#serv.fluid-container
+  .pt-5.bg-rounded-3
+    h1(style='text-align: center') Services
+    p.lead.me-5.ms-5
+      | NeoSOFT brings in deep domain and industry experience to build unique perspectives and meet the challenging requirements of clients from diverse industries. Leveraging the unique triple bottom line approach,
+      | we have achieved tangible results and unlocked opportunities for growth, innovation, and value creation.
+    .fluid-container
+      .row.me-5.ms-5.mt-5.pb-5
+        .col-sm-4
+          .card.bg-light
+            .card-body
+              h5.card-title(style='font-weight: bold;') Digital Transformation
+              p.card-text
+                | Enabling business by leveraging technology and building a solid and sustaineddigital ecosystem.
+              a.btn.btn-info(href='#') Learn More
+        .col-sm-4
+          .card.bg-light
+            .card-body
+              h5.card-title(style='font-weight: bold;') Artificial Intelligence
+              p.card-text
+                | Augumenting human intelligence with artificial intelligence to maximize business outcomes.
+              a.btn.btn-info(href='#') Learn More
+        .col-sm-4
+          .card
+            .card-body.bg-light
+              h5.card-title(style='font-weight: bold;') Data Science
+              p.card-text
+                | Empowering business with pragmatic, scalable, and cost-effective data science solutions.
+              a.btn.btn-info(href='#') Learn More
+section#port.container.bg-light.text-center.pt-5.pb-5
+  h1 Portfolio
+  p
+    | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam quas pariatur fugiat, ducimus harum nisi reprehenderit, aliquid unde quibusdam inventore earum aperiam nihil quaerat porro, animi delectus id sed quisquam.
+  .row.pt-3
+    .col-md-4.d-block.m-auto.pb-4
+      .card
+        img.card-img-top(src='./img/cloud-computing.png' alt='....')
+        .card-body
+          h5.card-title Cloud Computing
+          p.card-text Leveraging The Cloud To Deploy A Winning Enterprise IT Stratergy
+          a.btn.btn-secondary.btn-md(href='#') Explore &rarr;
+    .col-md-4.d-block.m-auto.pb-4
+      .card
+        img.card-img-top(src='./img/data-science.png' alt='....')
+        .card-body
+          h5.card-title Data
+          p.card-text Getting Future-Ready.The Data-Driven Enterprises Of 2025
+          a.btn.btn-secondary.btn-md(href='#') Explore &rarr;
+    .col-md-4.d-block.m-auto.pb-4
+      .card
+        img.card-img-top(src='./img/bnk.png' alt='....')
+        .card-body
+          h5.card-title Open Banking
+          p.card-text Open Banking:Carving New Pathways Through Digital transformation
+          a.btn.btn-secondary.btn-md(href='#') Explore &rarr;
+section#team.container.text-center.pt-3
+  h1 Meet Our Amazing Team
+  p
+    | We believe that creating a viable product or service requires a balanced operational strategy. Having the right variables in place is critical and everything, from leadership to digital transformation, organizational talent, and management practices, needs to be integrated for effective development. NeoSOFT
+    | adopts the Golden Triangle (People, Process, and Technology) framework to work in cohesion to ensure stronger and better business results.
+  .row.pt-2
+    .col-md-4.d-block.m-auto
+      figure.figure
+        img.figure-img.img-flude.rounded-circle(src='./img/person-icon.png' width='250px' height='250px')
+        figcaption
+          h4 Andrew Simons
+          p.figure-caption Team
+    .col-md-4.d-block.m-auto
+      figure.figure
+        img.figure-img.img-flude.rounded-circle(src='./img/person-icon.png' width='250px' height='250px')
+        figcaption
+          h4 Andrew Simons
+          p.figure-caption Team
+    .col-md-4.d-block.m-auto
+      figure.figure
+        img.figure-img.img-flude.rounded-circle(src='./img/person-icon.png' width='250px' height='250px')
+        figcaption
+          h4 Andrew Simons
+          p.figure-caption Team
+section#contact
+footer.bg-light.text-center.text-lg-start.pt-4
+  h1(style='text-align: center;') Contact Us
+  // Grid container
+  .container.p-4
+    // Grid row
+    .row
+      // Grid column
+      .col-lg-6.col-md-12.mb-4.mb-md-0.pt-3
+        h3.text-uppercase.text-center
+          | Let&apos;s Get Started
+          p
+            | Leave a message here and we shall connect with you to discuss your digitial needs.
+          .col-md-8.text-center.ps-5.ms-5
+            // Links
+            h6.text-uppercase.fw-bold.text-center Contact
+            i.fa.fa-phone.pb-2  +91 1234567890
+            i.fa.fa-envelope.pb-3  example@neososftmail.com
+            i.fa.fa-map-marker  Blue Ridge, Hinjewadi Phase-1, Pune, Maharashtra, India
+      // Grid column
+      // Grid column
+      .col-lg-6.col-md-12.mb-4.mb-md-0
+        // <h5 class="text-uppercase">Footer text</h5>
+        .container.bg-white
+          .p-3.mb-3.mt-3.bg-dark.text-white.text-center Feedback Form
+          form
+            .form-group
+              .row
+                .col
+                  label.form-label(for='exampleFormControlInput1') First Name
+                  input.form-control(type='text' placeholder='First name' aria-label='First name' required='')
+                .col
+                  label.form-label(for='exampleFormControlInput1') Last Name
+                  input.form-control(type='text' placeholder='Last name' aria-label='Last name' required='')
+            .row.pt-3
+              .col
+                label.form-label(for='exampleFormControlInput1') Email
+                input.form-control(type='email' placeholder='example@mail.com' aria-label='Email' required='')
+              .col
+                label.form-label(for='exampleFormControlInput1') Contact Number
+                input.form-control(type='text' placeholder='+91 1234567890' aria-label='Contact' required='')
+            .form-group.pt-3
+              label Write Us...
+              textarea.form-control(aria-label='With textarea')
+            .form-group.pt-3.text-center.d-grid
+  .text-center.p-3(style='background-color: rgba(0, 0, 0, 0.2);')
+    | Copyright &copy; 2022. All Right Reserved
+    a.text-dark(href='#')
+  // Copyright

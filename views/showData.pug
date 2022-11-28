@@ -1,0 +1,27 @@
+html 
+    head 
+        title Show Details
+body 
+include boot.html 
+
+table.table.table-striped
+    thead
+        tr
+            th(scope='col') #
+            th(scope='col') Name
+            th(scope='col') Email
+            th(scope='col') Age
+            th(scope='col') City
+
+    //- -let files = file;
+    -for(let i = 0; i < file.length; i++){ 
+        -h=file[i].split("|") 
+        tbody
+            tr
+                th(scope='row') 1
+                td=h[0]
+                td=h[1]
+                td=h[2]
+                td=h[3]
+    -}
+include footer.pug

@@ -1,0 +1,22 @@
+html 
+head
+title Header 
+body
+include boot.html
+nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.text-center
+  a.navbar-brand(href='#') 
+   h3(style='color: red; font-weight:bold;margin-left:14px;margin-right:280px')
+    span(style='color: white;')
+    
+  button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarNavAltMarkup' aria-controls='navbarNavAltMarkup' aria-expanded='false' aria-label='Toggle navigation')
+    span.navbar-toggler-icon
+  #navbarNavAltMarkup.collapse.navbar-collapse
+    .navbar-nav
+      a.nav-item.nav-link.active(href='/')
+        | Home 
+        //- span.sr-only (current)
+      a.nav-item.nav-link(href='/aboutUs') About Us
+      a.nav-item.nav-link(href='/gallary') Gallary
+      a.nav-item.nav-link(href='/services') Services
+      a.nav-item.nav-link(href='/contactUs') Contact Us
+      a.nav-item.nav-link(href='/showData') Contact Details
